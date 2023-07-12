@@ -1,101 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Nanotechnology</title>
+    <title>HTML Project</title>
 </head>
-
 <body>
     <header>
-        <a href="#">
-            <img src="data:image/png;base64,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"
-                alt="Logo" />
-        </a>
-        <nav>
-            <a href="#">https://www.medicaldevice-network.com/comment/nanotechnology-medicine-technology</a>
-            <a href="#">https://www.azonano.com/article.aspx?ArticleID=4985</a>
-            <a href="#">https://www.nifa.usda.gov/about-nifa/impacts/nanotechnology-agriculture-food-systems</a>
-        </nav>
+        <div>
+            <div class="organization-logo">
+                <a href="#">
+                    <img src="path_to_your_image.jpg" alt="Logo">
+                </a>
+            </div>
+            <nav id="nav-links">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
+        <section id="lead-section">
             <div>
-                <h2>Nanotechnology in Medicine</h2>
-                <p>Nanomedicine refers to the area of science that combines nanotechnology with drugs or diagnostic
-                    molecules to improve the ability to target specific cells or tissues. These materials are produced
-                    on a nanoscale level and are safe to introduce into the body. Applications for nanotechnology in
-                    medicine include imaging, diagnosis, or the delivery of drugs that will help medical professionals
-                    treat various diseases. </p> <br>
-                <button>Click me</button>
+                <h1>TITLE</h1>
+                <p>3 WORDS</p>
+                <button>BUTTON</button>
             </div>
             <div>
-                <h2>Nanotechnology in Computer</h2>
+                <h2>TITLE</h2>
                 <div>
-                    <div>
-                        <img src="https://images.easytechjunkie.com/slideshow-mobile-small/ipodonwhitebackground.jpg"
-                            alt="Phones">
-                        <h3>Nanotecnology is used to make phones</h3>
-                        <p>Nanotechnology is used for computing small devices like phones.</p>
-                    </div>
-                    <div>
-                        <img src="https://images.easytechjunkie.com/computer-processor-on-green.jpg" alt="chips">
-                        <h3>Nnaotechnology is used in making high powered chips in smaller packages</h3>
-                        <p>The demand for smaller devices have challenged chip engineers and manufacturers to design
-                            high powered chips in smaller packages</p>
-                    </div>
-                    <div>
-                        <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2773064622000068-gr7.jpg"
-                            alt="Nanotube modeler">
-                        <h3>Nanotechnology is used to create nanotube modeler</h3>
-                        <p>Nanotube Modeler is an advanced software application designed specifically for helping you
-                            generate x, y, and z coordinates for nanotubes and nanocones, and analyze them using the
-                            integrated viewers or an external program of your choice. In addition, the tool is able to
-                            create buckyballs and graphene sheets using interactive graphs </p>
-                    </div>
-                    <div>
-                        <img src="http://1.bp.blogspot.com/_0P1bh8FPOGQ/TGE7BGcR4XI/AAAAAAAAABc/-LqYlgqtEns/s200/NanoDots-Fig1a.jpg"
-                            alt="Nanodots">
-                        <h3>Nanotechnology is used for creating nanodots</h3>
-                        <p>A possible new form of data storage is using nanosized bits of nickel called “nanodots”. They
-                            could be used to store terabytes of data and be used in homes and workplaces. There is much
-                            potential in this product given the current sizes of data storage devices we have at the
-                            moment such as USB and external hard drives. </p>
-                    </div>
+                    <img src="image.jpg" alt="image">
+                    <h3>IMAGE</h3>
+                    <p>love is good</p>
+                </div>
+                <div>
+                    <img src="image.jpg" alt="image">
+                    <h3>IMAGE</h3>
+                    <p>love is beautiful</p>
+                </div>
+                <div>
+                    <img src="image.jpg" alt="image">
+                    <h3>IMAGE</h3>
+                    <p>love is kindness</p>
+                </div>
+                <div>
+                    <img src="image.jpg" alt="image">
+                    <h3>Image</h3>
+                    <p>love is selflessness</p>
                 </div>
             </div>
         </section>
         <section>
             <div>
-                <img src="https://quotefancy.com/media/wallpaper/800x450/2576342-Ralph-Merkle-Quote-Nanotechnology-is-an-idea-that-most-people.jpg"
-                    alt="Nanotchnology in AI">
-            </div>
-            <div>
-                <q>Nanotechnology is an idea that most people didn't believe.</q>
-                <p>Ralph Merkle</p>
-                <p>Nanotechnology will be the tool that AI will use to achieve 'singularity'.</p>
+                <img src="#" alt="Image">
+                <div>
+                    <q>Life is beautiful</q>
+                    <p>Robert Luke</p>
+                    <p>Always appreciate life</p>
+                </div>
             </div>
         </section>
         <section>
-            <h2>Videos of Nanotechnology</h2>
+            <h2>Videos of love and life</h2>
+            <div class="video_lists">
+                <div class="video_contents">
+                    <div class="video">
+                        <img src="#" alt="image">
+                        <h3>Life is good</h3>
+                        <p>Love is life.</p>
+                        <div class="author's_content">
+                            <img src="#" alt="image">
+                            <h3>Robert Langer</h3>
+                        </div>
+                        <div class="ratings">
+                            <div class="image_ratings">
+                                <img src="#" alt="images" />
+                                <img src="#" alt="images" />
+                                <img src="#" alt="images" />
+                                <img src="#" alt="images" />
+                            </div>
+                            <p>Please rate it</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video_contents">
+                    <div class="video">
+                        <img src="#" alt="image">
+                        <h3>Life is good</h3>
+                        <p>Life is beautiful.</p>
+                        <div class="author's_content">
+                            <img src="#" alt="image">
+                            <h3>Robert Langer</h3>
+                        </div>
+                        <div class="ratings">
+                            <div class="image_ratings">
+                                <img src="#" alt="images" />
+                                <img src="#" alt="images" />
+                                <img src="#" alt="images" />
+                                <img src="#" alt="images" />
+                            </div>
+                            <p>Please rate it</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video_contents">
+                    <div class="video">
+                        <img src="#" alt="image">
+                        <h3>Life is good</h3>
+                        <p>Money is life.</p>
+                        <div class="author's_content">
+                            <img src="#" alt="image">
+                            <h3>Robert Langer</h3>
+                        </div>
+                        <div class="ratings">
+                            <div class="image_ratings">
+                                <img src="#" alt="images" />
+                                <img src="#" alt="images" />
+                                <img src="#" alt="images" />
+                                <img src="#" alt="images" />
+                            </div>
+                            <p>Please rate it</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video_contents">
+                    <div class="video">
+                        <img src="#" alt="image">
+                        <h3>Life is good</h3>
+                        <p>Happiness is life.</p>
+                        <div class="author's_content">
+                            <img src="#" alt="image">
+                            <h3>Robert Langer</h3>
+                        </div>
+                        <div class="ratings">
+                            <div class="image_ratings">
+                                <img src="#" alt="images" />
+                                <img src="#" alt="images" />
+                                <img src="#" alt="images" />
+                                <img src="#" alt="images" />
+                            </div>
+                            <p>Please rate it</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>TITLE</h2>
             <div>
                 <div>
-                    <img src="https://www.medicaldevice-network.com/wp-content/uploads/sites/23/2020/07/Nanotechnology-Medicine-Technology-July.jpg" alt="Nanotechnology in medicine">
-                    <h3>Nanotechnology in medicine</h3>
-                    <p>Biomedical engineer Robert Langer on drug delivery, treating cancer, and problems of introduction
-                        of new methods in medicine</p>
+                  <img src="#" alt="Images">
+                  <h3>Success is the Ultimate</h3>
+                  <p>It is good to be successful</p>
+                </div>
                 <div>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Drexler763x1000.jpg/220px-Drexler763x1000.jpg" alt="Father of nanomedicine">
-                    <h4>K. Eric Drexler</h4>
+                   <img src="#" alt="Images">
+                  <h3>Education is the key</h3>
+                  <p>Always study hard</p>
                 </div>
+                <div>
+                    <img src="#" alt="Images">
+                   <h3>There is reward for hardwork</h3>
+                   <p>Hardwork pays</p>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                    <img src="#" alt="Images">
+                   <h3>Obedient is better than sacrifice</h3>
+                   <p>Always obey</p>
+                </div>
+                <div>
+                    <button>BUTTON</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>FAQ</h2>
+            <div class="block-contents">
+                <div class="row-block">
+                    <div class="item-block">
+                        <h3>What is Love?</h3>
+                        <p>Please answer the question</p>
+                    </div>
+                    <div class="item-block">
+                        <h3>What is Light?</h3>
+                        <p>Please answer the question</p>
+                    </div>
+                </div>
+                <div class="row-block">
+                    <div class="item-block">
+                        <h3>Can one be Faithful?</h3>
+                        <p>Please answer the question</p>
+                    </div>
+                    <div class="item-block">
+                        <h3>Can you show kindness to someone?</h3>
+                        <p>Please answer the question</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer>
+        <section>
+            <div class="footer-center">
+                <div class="row-block">
+                    <img src="#" alt="Image">
+                    <div>
+                        <a href="#"><img src="#" alt="Image1"></a>
+                        <a href="#"><img src="#" alt="Image2"></a>
+                        <a href="#"><img src="#" alt="Image3"></a>
+                    </div>
+                </div>
+                <div>
+                    <p>I love HTML</p>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
-
 </html>
