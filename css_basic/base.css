@@ -68,8 +68,8 @@ aside {
 	background: #FAFAFA;
 }
 aside p {
-	border: 1px solid #bbb;
-	background: #ddd;
+	border: 1px solid black;
+	background: #edf10200;
 	color: black;
 }
 footer a {
