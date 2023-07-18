@@ -1,7 +1,6 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: grey;
 }
 main{
     display: flex;
@@ -11,14 +10,11 @@ main{
 article{
     flex: 2;
     overflow-y: auto;
+    border: 50px;
+    background-color: seagreen;
+    border-color: blueviolet;
 }
 aside{
     flex: 1;
     overflow-y: auto;
-    background-color:  rgba(0, 0, 255, 0.178);
-}
-header{
-    border: 2px solid black;
-    height: 70px;
-    width: inherit;
 }
